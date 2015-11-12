@@ -1,0 +1,19 @@
+import urllib
+import json
+
+url = raw_input('Enter Location:')
+print 'Retrieving:', url
+uh= urllib.urlopen(url)
+
+input=uh.read() #string received
+print 'Retrieved',len(input),'characters'
+
+
+info = json.loads(input) #in form of json as a dictionary
+sum=0
+print 'Count:', len(info["comments"])
+
+#for item in info:
+    #sum=sum+int(item["comments"][
+
+

@@ -19,3 +19,4 @@ for item in lst:
 
 print 'Sum:', sum
 
+
